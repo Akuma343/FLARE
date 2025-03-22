@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/otherbg" />
+
+    <!-- Invisible Anchor to Position Above Center -->
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <!-- Horizontal Layout for Buttons and Titles -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/anchor"
+        android:layout_marginBottom="100dp"> <!-- Adjust this to move up more -->
+
+        <!-- Gas Leak Button with Title -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/gas"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/gleakbtn"
+                android:scaleType="fitCenter"
+                android:contentDescription="Gas Leak Button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gas Leak"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:shadowDx="5"
+                android:shadowDy="2"/>
+        </LinearLayout>
+
+        <!-- Fallen Tree Button with Title -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="20dp">
+
+            <ImageButton
+                android:id="@+id/tree"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/falltree"
+                android:scaleType="fitCenter"
+                android:contentDescription="Fallen Tree Button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fallen Tree"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:shadowDx="5"
+                android:shadowDy="2"/>
+        </LinearLayout>
+
+        <!-- Building Collapse Button with Title -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="20dp">
+
+            <ImageButton
+                android:id="@+id/building"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:contentDescription="Building Collapse Button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/collapse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building Collapse"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:shadowDx="5"
+                android:shadowDy="2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Vertical Layout for SEND & CANCEL Buttons (Placed Below the Above Layout) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_layout"
+        android:layout_marginTop="180dp"> <!-- Adjust margin to move down -->
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="SEND"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_send"
+            android:layout_gravity="center" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="CANCEL"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_cancel"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/lbg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="43dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Email:"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/white"
+            android:padding="10dp" />
+
+        <!-- Password Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Password:"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="LOG IN"
+            android:background="@drawable/rounded_button"
+            android:textColor="#8B4513"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:text="SIGN UP"
+            android:background="@drawable/rounded_button"
+            android:textColor="#8B4513"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
