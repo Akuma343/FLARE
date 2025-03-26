@@ -33,35 +33,42 @@
             android:layout_marginBottom="16dp" />
 
         <!-- Email Input -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:text="Email:"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="394dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="12dp"
-            android:background="@android:color/white"
-            android:padding="10dp" />
-
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black" />
         <!-- Password Input -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:text="Password:"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:textColor="@android:color/white" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@android:color/white"
-            android:inputType="textPassword"
-            android:padding="10dp" />
+            android:layout_width="394dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black" />
 
         <!-- Login Button -->
         <Button
