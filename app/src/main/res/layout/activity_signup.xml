@@ -125,6 +125,7 @@
 
         <!-- Sign Up Button -->
         <Button
+            android:id="@+id/signUpButton"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -132,5 +133,6 @@
             android:text="SIGN UP"
             android:textColor="#8B4513"
             android:textStyle="bold" />
+
     </LinearLayout>
 </RelativeLayout>
