@@ -10,38 +10,57 @@
         android:scaleType="fitXY"
         android:src="@drawable/menubg" />
 
+    <!-- Profile Icon Button at the Top Right -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp">
+
+        <ImageButton
+            android:id="@+id/profile_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="Profile Icon"
+            android:src="@drawable/ic_profile" />
+    </FrameLayout>
+
+
+
     <!-- Report Container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="380dp"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
 
         <!-- Fire Emergency Button -->
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:background="@drawable/fire_button"
-        android:text="FIRE"
-        android:textSize="40sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/fire_button"
+            android:text="FIRE"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
 
-    <!-- Other Emergency Button -->
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:background="@drawable/other_emergency_button"
-        android:text="OTHER EMERGENCY"
-        android:textSize="20sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
-</LinearLayout>
+        <!-- Other Emergency Button -->
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/other_emergency_button"
+            android:text="OTHER EMERGENCY"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <!-- Location Icon Button -->
     <FrameLayout
@@ -65,4 +84,5 @@
             android:background="@android:color/transparent"
             android:layout_gravity="center"/>
     </FrameLayout>
+
 </RelativeLayout>
